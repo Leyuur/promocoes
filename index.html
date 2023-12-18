@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js"></script>
+  <title>DRTechs</title>
+</head>
+<body>
+  
+  <div class="menu-toggle" onclick="toggleMenu()">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </div>
+  
+  <div class="menu">
+   
+    <nav>
+        <ul>
+            <img src = "logo.png">
+            <li id="inicioMenu"><a href="#inicio" onclick="scrollToSection('inicio')">INÍCIO</a></li>
+            <li id="participarMenu"><a href="#participar" onclick="scrollToSection('participar')">COMO PARTICIPAR</a></li>
+            <li id="faqMenu"><a href="#faq" onclick="scrollToSection('faq')">FAQ</a></li>
+            <a href="ganhadores.html">GANHADORES</a>
+            <a href="regulamento.html">REGULAMENTO</a>
+            <a id="numerosMenu" href="numeros.html"> CONSULTAR NÚMERO DA SORTE</a>
+          </ul>
+    </nav>
+  </div>
+
+  <div id="inicio" class="section">
+    <img src="fundo natal.png" alt="Imagem do Carro">
+  </div>
+
+  <div id="participar" class="section">
+    <h2>COMO PARTICIPAR</h2>
+    <img src="ComoParticipar2.png" alt="Imagem Como Participar">
+  </div>
+
+  <div id="faq" class="section">
+    <h2>DÚVIDAS</h2>
+    
+    <!-- Adiciona a classe "faq-column" ao envoltório das perguntas e respostas -->
+    <div class="faq-column">
+
+      <!-- Pergunta 1 -->
+      <button class="faq-btn" onclick="toggleAnswer('answer1')"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+        <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+      </svg> 1. Quem pode participar da promoção?</button>
+      <div class="faq-answer" id="answer1">
+        <p>Podem participar as pessoas físicas maiores de 18 (dezoito) anos, que estejam regularmente inscritas no CPF (Cadastro de Pessoas Físicas), domiciliadas no Brasil.</p>
+      </div>
+
+      <!-- Pergunta 2 -->
+      <button class="faq-btn" onclick="toggleAnswer('answer2')"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+        <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+      </svg> 2. Qual período de participação da promoção?</button>
+      <div class="faq-answer" id="answer2">
+        <p>O período de participação vai de 04/09/2024 a 10/12/2024, podendo ser encerrada antecipadamente no caso de distribuição de todos os brindes.</p>
+      </div>
+
+      <!-- Pergunta 3 -->
+      <button class="faq-btn" onclick="toggleAnswer('answer3')"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+        <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+      </svg> 3. Quais locais posso comprar os produtos da promoção?</button>
+      <div class="faq-answer" id="answer3">
+        <p>A(s) compra(s) pode(m) ser realizada(s) em todas as lojas físicas/virtuais de supermercados, com situação ATIVA no Cadastro Nacional de Pessoa Jurídica (CNPJ), dentro da área de abrangência, que comercializem os produtos da marca Drtechs e ofereçam Nota Fiscal para validação de compra.</p>
+      </div>
+
+      <!-- Pergunta 4 -->
+      <button class="faq-btn" onclick="toggleAnswer('answer4')"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+        <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+      </svg> 4. Quais os produtos que participam dessa promoção?</button>
+      <div class="faq-answer" id="answer4">
+        <p>Qualquer produto da marca DRTechs.</p>
+      </div>
+
+      <!-- Pergunta 5 -->
+      <button class="faq-btn" onclick="toggleAnswer('answer5')"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+        <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+      </svg> 5. É necessário realizar alguma compra para participar da promoção?</button>
+      <div class="faq-answer" id="answer5">
+        <p>Sim, para participar é necessário realizar a compra de pelo menos 1 (um) produto.</p>
+      </div>
+
+      <!-- Adicione mais perguntas e respostas conforme necessário -->
+
+    </div>
+  </div>  
+  <footer>
+    <img src = "logo.png">
+    <p>Esta promoção foi autorizada pelo Ministério da Fazenda - SRE</p>
+    <br>
+    <p>Desenvolvido por Drtechs</p>
+    <br>
+    <p>Certificado xxxxxxx</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js"></script>
+  <title>DRTechs</title>
+</head>
+<body>
+    <div class="menu-toggle" onclick="toggleMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    <div class="menu" style="position: unset; display: flex; align-items: center; justify-content: center;">
+        <nav>
+            <ul>
+                <img src = "logo.png">
+                <a href="index.html" >INÍCIO</a></li>
+                <a href="index.html#participar">COMO PARTICIPAR</a>
+                <a href="index.html#faq">FAQ</a>
+                <a href="ganhadores.html">GANHADORES</a>
+                <a href="regulamento.html">REGULAMENTO</a>
+                <a id="numerosMenu" href="numeros.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+                  </svg> Consultar número da sorte</a>
+              </ul>
+        </nav>
+    </div>
+    
+       
+        <form>
+            <h1>CONSULTE SEUS NÚMEROS DA SORTE</h1>
+            <label for="cpf">Digite seu CPF:</label>
+            <input type="text" id="cpf" name="cpf" placeholder="123.456.789-00" required>
+        
+            <button type="submit">Enviar</button>
+        </form>
+    
+        
+      <footer>
+        <img src = "logo2.png">
+        <p>Esta promoção foi autorizada pelo Ministério da Fazenda - SRE</p>
+        <br>
+        <p>Desenvolvido por Drtechs</p>
+        <br>
+        <p>Certificado xxxxxxx</p>
+    </footer>
+    <script>$('#cpf').mask('000.000.000-00', {reverse: true});</script>
+</body>
+</html>

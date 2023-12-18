@@ -1,0 +1,300 @@
+body {
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+}
+.menu-toggle {
+    display: none; /* Inicialmente, o botão de menu não é exibido em telas maiores que 768px */
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: #5C6B26; /* Cor das barras do menu */
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+  }
+  
+  nav li {
+    float: left;
+    margin: 0 15px; /* Adicione algum espaço entre os itens do menu */
+  }
+
+nav a {
+    display: block;
+    color: #5C6B26; /* Cinza Claro */
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #e9e9e9; /* Vermelho */
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+
+h2 {
+    color: #5C6B26; /* Cinza Claro */
+    font-size: 50px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+#inicio > img {
+    margin-top: 100px;
+    width: 100%;
+}
+
+#participar {
+  background-color: white;
+  height: 50%;
+  
+}
+
+#participar > img {
+    width: 50%;
+    height: 50%;
+}
+
+.linha {
+    background-color: #5C6B26; 
+    margin: 170px 200px 0px;
+    width: 80%;
+    height: 3px;
+}
+
+ul > img {
+    width: 10%;
+    margin-right: 100px;
+}
+
+#ganhadores {
+    text-align: center;
+    color: #5C6B26; /* Cinza Claro */
+    font-size: large;
+}
+
+#faq {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    background-color: #7a8e32; /* Cinza Claro */
+}
+
+#faq > h2 {
+    color: white; /* Vermelho */
+}
+
+.faq-column {
+    column-count: 1;
+    column-gap: 20px;
+    width: 40%;
+}
+
+.faq-btn,
+.faq-answer {
+    text-align: left;
+}
+
+.faq-btn {
+    background-color: white; /* Vermelho */
+    color: #5C6B26; /* Cinza Claro */
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 60px;
+}
+
+.faq-answer {
+    color: white; /* Cinza Claro */
+    display: none;
+    margin-bottom: 20px;
+    background-color: #5C6B26; /* Vermelho */
+    padding: 10px;
+    border: 1px solid #ffffff; /* Cinza Claro */
+}
+
+footer {
+    padding-top: 5px;
+    text-align: center;
+    font-size: small;
+    color: #5C6B26; /* Cinza Claro */
+    margin-bottom: 0;
+}
+
+footer > img {
+    width: 15%;
+}
+
+.pdf {
+    margin-top: 1000px;
+    width: 100%;
+}
+
+#numerosMenu {
+    font-weight: normal;
+    text-decoration: none;
+    text-align: center;
+    color: white; /* Cinza Claro */
+    padding: 10px;
+    background-color: #5C6B26;
+    cursor: pointer;
+    margin-left: 100px;
+    height: 25px;
+}
+
+.title {
+    margin-top: 100px;
+    color: #5C6B26; /* Cinza Claro */
+    text-align: center;
+}
+
+form {
+    color: #5C6B26; /* Cinza Claro */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    height: 50%;
+}
+
+form > input {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #5C6B26; /* Cinza Claro */
+    width: 20%;
+}
+
+form > button {
+    margin: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #5C6B26; /* Cinza Claro */
+    cursor: pointer;
+    width: 20%;
+}
+    @media screen and (max-width: 768px){
+
+
+      #participar > img {
+        content: url("comoParticipar3.png");
+        width: 100%;
+        height: 100%;
+      }
+      #participar {
+        text-align: center;
+      }
+
+      #inicio{
+        top: 0;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+
+      #inicio > img {
+        content: url("fundo\ natal2.png");
+        height: 100%;
+        margin: 0;
+      }
+
+      footer > img {
+        width: 30%;
+      }
+
+      .menu-toggle {
+        display: block; 
+        margin: 20px; 
+      }
+
+      nav {
+        display: none;
+      }
+    
+      nav.active {
+        
+        display: flex;
+        flex-direction: column; 
+        position: fixed;
+        background-color: white;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        align-items: end;
+        height: 60%;
+        width: 80%;
+        animation: slideIn 1s;
+      }
+      nav ul {
+        margin-top: 25%;
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        text-align: center;
+        font-size: 10px;
+        width: 60%;
+        text-align: start;
+        
+      }
+      nav ul > img {
+        display: none;
+      }
+      #numerosMenu {
+        margin-top: 10%;
+        margin-right: 55%;
+        height: 20%;
+      }
+
+    }
+      
+    
+  
